@@ -10,6 +10,7 @@ import 'package:flutter/semantics.dart';
 import 'package:intl/intl.dart';
 import 'package:vector_math/vector_math_64.dart' show radians;
 
+import 'background.dart';
 import 'container_hand.dart';
 import 'drawn_hand.dart';
 
@@ -135,7 +136,7 @@ class _AnalogClockState extends State<AnalogClock> {
         color: customTheme.backgroundColor,
         child: Stack(
           children: [
-            //TODO: Add background animations
+            Background(),
             // Example of a hand drawn with [CustomPainter].
             DrawnHand(
               color: customTheme.accentColor,

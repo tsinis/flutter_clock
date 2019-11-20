@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
   flutter_clock_helper:
     path: ../flutter_clock_helper
-  cupertino_icons: ^0.1.2
+  flare_flutter: ^1.7.1
 
 dev_dependencies:
   flutter_test:
@@ -18,3 +18,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/background.flr
