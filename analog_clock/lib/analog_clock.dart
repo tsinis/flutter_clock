@@ -136,7 +136,8 @@ class _AnalogClockState extends State<AnalogClock> {
         color: customTheme.backgroundColor,
         child: Stack(
           children: [
-            Background(),
+            // Animated Flare background, instead of default static blank
+            BackgroundAnimation(),
             // Example of a hand drawn with [CustomPainter].
             DrawnHand(
               color: customTheme.accentColor,

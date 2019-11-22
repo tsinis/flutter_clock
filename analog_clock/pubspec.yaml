@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
   flutter_clock_helper:
     path: ../flutter_clock_helper
-  flare_flutter: ^1.7.1
+  flare_flutter: ^1.7.3
 
 dev_dependencies:
   flutter_test:

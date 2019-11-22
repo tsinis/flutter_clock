@@ -4,6 +4,8 @@
 
 import 'dart:io';
 
+import 'package:flare_flutter/flare_cache.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_clock_helper/customizer.dart';
 import 'package:flutter_clock_helper/model.dart';
 import 'package:flutter/foundation.dart';
@@ -11,7 +13,17 @@ import 'package:flutter/material.dart';
 
 import 'analog_clock.dart';
 
-void main() {
+//Path to animations, that needs to be prechached
+const _filesToWarmup = ["assets/background.flr"];
+
+//Function to cache animations
+Future<void> _warmupFlare() async {
+  for (final filename in _filesToWarmup) {
+    await cachedActor(rootBundle, filename);
+  }
+}
+
+void main() async {
   // A temporary measure until Platform supports web and TargetPlatform supports
   // macOS.
   if (!kIsWeb && Platform.isMacOS) {
@@ -20,7 +32,9 @@ void main() {
     // See https://github.com/flutter/flutter/wiki/Desktop-shells#target-platform-override.
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   }
-
+  // Don't prune the animation cache, keep loaded Flare files warm and ready
+  FlareCache.doesPrune = false;
+  await _warmupFlare(); //Actually cache animations and wait until all is loaded to cache
   // This creates a clock that enables you to customize it.
   //
   // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
