@@ -3,8 +3,10 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controls.dart';
 import 'package:flutter/widgets.dart';
 
-// Define Flare animation name inside our .FLR file (60 min. long, in my case).
-const String _animationName = 'Untitled';
+// Define Flare time nimation name inside our .FLR file (60 min. long, in my case).
+const String _timeAnimationName = 'Untitled';
+// Define Flare day-night nimation name inside our .FLR file (23 sec. long, in my case).
+const String _dayNightAnimationName = 'day';
 
 // Wrap animation with standart StatefulWidget so we can sync our animation with world time.
 class BackgroundAnimation extends StatefulWidget {
@@ -20,20 +22,23 @@ class _BackgroundAnimationState extends State<BackgroundAnimation> {
   @override
   Widget build(BuildContext context) {
     return FlareActor('assets/background.flr',
-        animation: _animationName, controller: _animationController);
+        animation: _timeAnimationName, controller: _animationController);
   }
 }
 
 // Animation controller setup.
 class _AnimationController extends FlareControls {
-  ActorAnimation _animation; // To store animation.
+  ActorAnimation _dayNightAnimation; // To store day-nighy animation.
+  ActorAnimation _timeAnimation; // To store time animation.
   // double _time; // To sync time in animation with with real time, once per hour
 
 // Initialize our animation control.
   @override
   void initialize(FlutterActorArtboard artboard) {
     super.initialize(artboard);
-    _animation = artboard.getAnimation(_animationName); // Store animation so we can controll it.
+    _dayNightAnimation = artboard.getAnimation(_dayNightAnimationName);
+    play(_dayNightAnimationName);
+    _timeAnimation = artboard.getAnimation(_timeAnimationName); // Store animation so we can controll it.
     // _time = (DateTime.now()).second + (DateTime.now().minute * 60) - 0.1; // Get real world time for syncing once per hour.
   }
 
@@ -45,15 +50,17 @@ class _AnimationController extends FlareControls {
     // _time += elapsed; // Animation will start from point of real world minute and second.
     // If time is on the end (of 59min and 59sec) we will end animation
     // and initialize it again, so we can sync time.
-    // if (_time > _animation.duration) {
+    // if (_time > _timeAnimation.duration) {
     //   elapsed = 0.0;
     //   initialize(artboard);
     // }
     // Remove code below and uncomment code in Controller if you
     // need animation to sync time only once per hour.
-    _animation.apply(_now.millisecond / 1000 + _now.second + _now.minute * 60,
+    _timeAnimation.apply(_now.millisecond / 1000 + _now.second + _now.minute * 60,
         artboard, 1.0);
-    // _animation.apply(_time, artboard, 1.0);
+    _dayNightAnimation.apply(_now.minute / 100 + _now.hour,
+        artboard, 1.0);
+    // _timeAnimation.apply(_time, artboard, 1.0);
     return true;
   }
 }
