@@ -58,7 +58,7 @@ class _AnimationController extends FlareControls {
     // need animation to sync time only once per hour.
     _timeAnimation.apply(_now.millisecond / 1000 + _now.second + _now.minute * 60,
         artboard, 1.0);
-    _dayNightAnimation.apply(_now.minute / 100 + _now.hour,
+    _dayNightAnimation.apply(_now.minute / 60 + _now.hour,
         artboard, 1.0);
     // _timeAnimation.apply(_time, artboard, 1.0);
     return true;
