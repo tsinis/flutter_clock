@@ -47,7 +47,7 @@ plugins:
   - removeDesc: true
   - removeDimensions: false
   - removeAttrs: true
-  - removeAttributesBySelector: true
+  - removeAttributesBySelector: false
   - removeElementsByAttr: true
   - addClassesToSVGElement: false
   - removeStyleElement: true
