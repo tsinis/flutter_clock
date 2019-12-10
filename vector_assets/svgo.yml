@@ -13,7 +13,7 @@ plugins:
   - minifyStyles: true
   - convertStyleToAttrs: true
   - cleanupIDs: true
-  - prefixIds: false
+  - prefixIds: true
   - removeRasterImages: true
   - removeUselessDefs: true
   - cleanupNumericValues:
@@ -28,31 +28,31 @@ plugins:
   - cleanupEnableBackground: true
   - removeHiddenElems: true
   - removeEmptyText: true
-  - convertShapeToPath: false
+  - convertShapeToPath: true
   - convertEllipseToCircle: true
   - moveElemsAttrsToGroup: true
   - moveGroupAttrsToElems: true
   - collapseGroups: true
   - convertPathData:
-      floatPrecision: 0
+      floatPrecision: 5
   - convertTransform:
       floatPrecision: 0
   - removeEmptyAttrs: true
   - removeEmptyContainers: true
   - mergePaths: true
   - removeUnusedNS: true
-  - sortAttrs: false
+  - sortAttrs: true
   - sortDefsChildren: true
   - removeTitle: true
   - removeDesc: true
-  - removeDimensions: false
+  - removeDimensions: true
   - removeAttrs: true
   - removeAttributesBySelector: false
   - removeElementsByAttr: true
-  - addClassesToSVGElement: false
+  - addClassesToSVGElement: true
   - removeStyleElement: true
   - removeScriptElement: true
-  - addAttributesToSVGElement: false
+  - addAttributesToSVGElement: true
   - removeOffCanvasPaths: true
   - reusePaths: true
 
