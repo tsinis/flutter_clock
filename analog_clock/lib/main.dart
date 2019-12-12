@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 import 'analog_clock.dart';
 
 //Path to animations, that needs to be prechached
-const _filesToWarmup = ["assets/background.flr"];
+const _filesToWarmup = ["assets/FlutterClock.flr"];
 
 //Function to cache animations
 Future<void> _warmupFlare() async {
@@ -43,15 +43,15 @@ void main() async {
 
   // Warm the cache up.
   _warmupFlare().then((_) {
-
-  // This creates a clock that enables you to customize it.
-  //
-  // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
-  //  - A clock widget (in this case, [AnalogClock])
-  //  - A model (provided to you by [ClockModel])
-  // For more information, see the flutter_clock_helper package.
-  //
-  // Your job is to edit [AnalogClock], or replace it with your own clock
-  // widget. (Look in analog_clock.dart for more details!)
-  runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));});
+    // This creates a clock that enables you to customize it.
+    //
+    // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
+    //  - A clock widget (in this case, [AnalogClock])
+    //  - A model (provided to you by [ClockModel])
+    // For more information, see the flutter_clock_helper package.
+    //
+    // Your job is to edit [AnalogClock], or replace it with your own clock
+    // widget. (Look in analog_clock.dart for more details!)
+    runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));
+  });
 }

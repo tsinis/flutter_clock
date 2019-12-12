@@ -34,7 +34,7 @@ plugins:
   - moveGroupAttrsToElems: true
   - collapseGroups: true
   - convertPathData:
-      floatPrecision: 5
+      floatPrecision: 6
   - convertTransform:
       floatPrecision: 0
   - removeEmptyAttrs: true

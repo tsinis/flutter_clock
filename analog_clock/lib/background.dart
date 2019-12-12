@@ -3,10 +3,10 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controls.dart';
 import 'package:flutter/widgets.dart';
 
-// Define Flare time nimation name inside our .FLR file (60 min. long, in my case).
-const String _timeAnimationName = 'Untitled';
-// Define Flare day-night nimation name inside our .FLR file (23 sec. long, in my case).
-const String _dayNightAnimationName = 'day';
+// Define Rive time nimation name inside our .FLR file (60 min. long, in my case).
+const String _timeAnimationName = 'min_sec';
+// Define Rive day-night nimation name inside our .FLR file (23 sec. long, in my case).
+const String _dayNightAnimationName = 'hour_day';
 
 // Wrap animation with standart StatefulWidget so we can sync our animation with world time.
 class BackgroundAnimation extends StatefulWidget {
@@ -21,7 +21,7 @@ class _BackgroundAnimationState extends State<BackgroundAnimation> {
 
   @override
   Widget build(BuildContext context) {
-    return FlareActor('assets/background.flr',
+    return FlareActor('assets/FlutterClock.flr',
         animation: _timeAnimationName, controller: _animationController);
   }
 }
