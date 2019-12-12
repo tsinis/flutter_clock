@@ -20,9 +20,9 @@ class AnalogClock extends StatefulWidget {
 
 class _AnalogClockState extends State<AnalogClock> {
   var _temperature = '';
-  var _temperatureRange = '';
+  // var _temperatureRange = '';
   var _condition = '';
-  var _location = '';
+  // var _location = '';
 
   @override
   void initState() {
@@ -50,28 +50,27 @@ class _AnalogClockState extends State<AnalogClock> {
   void _updateModel() {
     setState(() {
       _temperature = widget.model.temperatureString;
-      _temperatureRange = '(${widget.model.low} - ${widget.model.highString})';
+      // _temperatureRange = '(${widget.model.low} - ${widget.model.highString})';
       _condition = widget.model.weatherString;
-      _location = widget.model.location;
+      // _location = widget.model.location;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-
     final time = DateFormat.Hms().format(DateTime.now());
-    final weatherInfo = DefaultTextStyle(
-      style: TextStyle(color: Theme.of(context).primaryColor),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(_temperature),
-          Text(_temperatureRange),
-          Text(_condition),
-          Text(_location),
-        ],
-      ),
-    );
+    // final weatherInfo = DefaultTextStyle(
+    //   style: TextStyle(color: Theme.of(context).primaryColor),
+    //   child: Column(
+    //     crossAxisAlignment: CrossAxisAlignment.start,
+    //     children: [
+    //       Text(_temperature),
+    //       Text(_temperatureRange),
+    //       Text(_condition),
+    //       Text(_location),
+    //     ],
+    //   ),
+    // );
 
     return Semantics.fromProperties(
       properties: SemanticsProperties(
@@ -79,21 +78,20 @@ class _AnalogClockState extends State<AnalogClock> {
         value: time,
       ),
       child: Container(
-        color: Theme.of(context).backgroundColor,
-        child: Stack(
-          children: [
-            // Animated Flare background, instead of default static blank
-            BackgroundAnimation(),
-            Positioned(
-              left: 0,
-              bottom: 0,
-              child: Padding(
-                padding: const EdgeInsets.all(8),
-                child: weatherInfo,
-              ),
-            ),
-          ],
-        ),
+        color: Theme.of(context).scaffoldBackgroundColor,
+        child:
+            // Stack(children: [
+            RiveAnimation(),
+        // Positioned(
+        //   left: 0,
+        //   bottom: 0,
+        //   child: Padding(
+        //     padding: const EdgeInsets.all(8),
+        //     child: weatherInfo,
+        //   ),
+        // ),
+        // ],
+        // ),
       ),
     );
   }

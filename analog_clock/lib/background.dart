@@ -9,14 +9,14 @@ const String _timeAnimationName = 'min_sec';
 const String _dayNightAnimationName = 'hour_day';
 
 // Wrap animation with standart StatefulWidget so we can sync our animation with world time.
-class BackgroundAnimation extends StatefulWidget {
+class RiveAnimation extends StatefulWidget {
   @override
-  _BackgroundAnimationState createState() => _BackgroundAnimationState();
+  _RiveAnimationState createState() => _RiveAnimationState();
 }
 
 // Define path to animation file, animation name and of course controller,
 // because all the magics with time sync. happens in that controller.
-class _BackgroundAnimationState extends State<BackgroundAnimation> {
+class _RiveAnimationState extends State<RiveAnimation> {
   _AnimationController _animationController = _AnimationController();
 
   @override
