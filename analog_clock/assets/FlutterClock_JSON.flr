@@ -17010,7 +17010,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 514,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 2,
 					"blurY": 2,
 					"offsetX": 0,
@@ -18614,7 +18614,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 524,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 3,
 					"blurY": 3,
 					"offsetX": 0,
@@ -32478,7 +32478,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 681,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 3,
 					"blurY": 3,
 					"offsetX": 0,
@@ -33351,7 +33351,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 721,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 3,
 					"blurY": 3,
 					"offsetX": 0,
@@ -116219,7 +116219,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 2043,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 4,
 					"blurY": 4,
 					"offsetX": 0,
@@ -116342,7 +116342,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 2050,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 2,
 					"blurY": 2,
 					"offsetX": 1,
@@ -116527,7 +116527,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 2058,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 2,
 					"blurY": 2,
 					"offsetX": 0,
@@ -117077,7 +117077,7 @@
 				{
 					"name": "Drop Shadow",
 					"parent": 2072,
-					"isActive": true,
+					"isActive": false,
 					"blurX": 3,
 					"blurY": 3,
 					"offsetX": 0,
@@ -117112,23 +117112,6 @@
 					"type": "effectRenderer"
 				},
 				{
-					"name": "Inner Shadow",
-					"parent": 2072,
-					"isActive": false,
-					"blurX": 3,
-					"blurY": 3,
-					"offsetX": 0,
-					"offsetY": 0,
-					"color": [
-						0,
-						0,
-						0,
-						1
-					],
-					"blendMode": 3,
-					"type": "innerShadow"
-				},
-				{
 					"name": "daytime_frame_body",
 					"parent": 2071,
 					"translation": [
@@ -117156,7 +117139,7 @@
 				},
 				{
 					"name": "Color",
-					"parent": 2078,
+					"parent": 2077,
 					"opacity": 1,
 					"color": [
 						0.2857370674610138,
@@ -117172,7 +117155,7 @@
 				},
 				{
 					"name": "Ellipse Path",
-					"parent": 2078,
+					"parent": 2077,
 					"translation": [
 						0,
 						0
@@ -117217,7 +117200,7 @@
 				},
 				{
 					"name": "Color",
-					"parent": 2081,
+					"parent": 2080,
 					"opacity": 1,
 					"color": [
 						0.45333433151245117,
@@ -117233,7 +117216,7 @@
 				},
 				{
 					"name": "Ellipse Path",
-					"parent": 2081,
+					"parent": 2080,
 					"translation": [
 						0,
 						0
@@ -117252,8 +117235,8 @@
 				},
 				{
 					"name": "Drop Shadow",
-					"parent": 2081,
-					"isActive": true,
+					"parent": 2080,
+					"isActive": false,
 					"blurX": 3,
 					"blurY": 3,
 					"offsetX": 0,
@@ -117269,7 +117252,7 @@
 				},
 				{
 					"name": "daytime_frame_outter Layer",
-					"parent": 2081,
+					"parent": 2080,
 					"translation": [
 						0,
 						0
@@ -117310,7 +117293,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						0,
 						0
@@ -117348,7 +117331,7 @@
 				},
 				{
 					"name": "Color",
-					"parent": 2086,
+					"parent": 2085,
 					"opacity": 1,
 					"color": [
 						0.45333433151245117,
@@ -117364,8 +117347,8 @@
 				},
 				{
 					"name": "Drop Shadow",
-					"parent": 2086,
-					"isActive": true,
+					"parent": 2085,
+					"isActive": false,
 					"blurX": 2,
 					"blurY": 2,
 					"offsetX": 0,
@@ -117381,7 +117364,7 @@
 				},
 				{
 					"name": "daytime_dividers Layer",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						0,
 						0
@@ -117401,7 +117384,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						-129.4036102294922,
 						76.538330078125
@@ -117439,7 +117422,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						67.23536682128906,
 						20.337011337280273
@@ -117477,7 +117460,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						-75.09922790527344,
 						19.092845916748047
@@ -117515,7 +117498,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						97.19396209716797,
 						44.392581939697266
@@ -117553,7 +117536,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						-38.34342956542969,
 						4.082547664642334
@@ -117591,7 +117574,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						-142.5216827392578,
 						115.48440551757812
@@ -117629,7 +117612,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						120.60456848144531,
 						77.21336364746094
@@ -117667,7 +117650,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						-105.4301986694336,
 						43.436912536621094
@@ -117705,7 +117688,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						35.23497009277344,
 						5.629032611846924
@@ -117743,7 +117726,7 @@
 				},
 				{
 					"name": "Path",
-					"parent": 2086,
+					"parent": 2085,
 					"translation": [
 						133.15907287597656,
 						112.86077880859375
@@ -118219,8 +118202,8 @@
 				{
 					"name": "min_sec",
 					"fps": 60,
-					"duration": 3600,
-					"isLooping": true,
+					"duration": 60,
+					"isLooping": false,
 					"keyed": [
 						{
 							"component": 514,
@@ -118232,7 +118215,7 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 60,
 										"interpolatorType": 1,
 										"value": 6.283185307179586
 									}
@@ -118249,13 +118232,24 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 60,
 										"interpolatorType": 1,
 										"value": 376.99111843077515
 									}
 								]
 							]
-						},
+						}
+					],
+					"animationStart": 0,
+					"animationEnd": 60,
+					"type": "animation"
+				},
+				{
+					"name": "background",
+					"fps": 60,
+					"duration": 300,
+					"isLooping": true,
+					"keyed": [
 						{
 							"component": 548,
 							"rotation": [
@@ -118266,9 +118260,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 376.99111843077515
+										"value": 31.41592653589794
 									}
 								]
 							]
@@ -118283,9 +118277,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 753.9822368615503
+										"value": 62.83185307179588
 									}
 								]
 							]
@@ -118300,9 +118294,9 @@
 										"value": -0.13962634015954636
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": -377.13074477093477
+										"value": 31.41592653589793
 									}
 								]
 							]
@@ -118317,9 +118311,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 753.9822368615503
+										"value": 62.83185307179588
 									}
 								]
 							]
@@ -118331,12 +118325,12 @@
 									{
 										"time": 0,
 										"interpolatorType": 1,
-										"value": -0.03490658503988659
+										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 50.230575872396805
+										"value": 41.88790204786391
 									}
 								]
 							]
@@ -118351,9 +118345,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": -50.26548245743669
+										"value": -6.283185307179586
 									}
 								]
 							]
@@ -118368,9 +118362,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 376.99111843077515
+										"value": 31.41592653589794
 									}
 								]
 							]
@@ -118385,9 +118379,9 @@
 										"value": 0
 									},
 									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
-										"value": 376.99111843077515
+										"value": 31.41592653589794
 									}
 								]
 							]
@@ -118417,162 +118411,7 @@
 										"value": 0
 									},
 									{
-										"time": 333.6333333333333,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 600.0166666666667,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 600.0333333333333,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 633.65,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 900.0333333333333,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 900.05,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 933.6666666666666,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 1200.05,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 1200.0666666666666,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1233.6833333333332,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 1500.0666666666666,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 1500.0833333333333,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1533.6999999999998,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 1800.0833333333333,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 1800.1,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1833.7166666666665,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 2100.1,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 2100.116666666667,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2133.7333333333336,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 2400.116666666667,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 2400.133333333333,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2433.75,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 2700.133333333333,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 2700.15,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2733.766666666667,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 3000.15,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 3000.1666666666665,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3033.7833333333333,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 3300.1666666666665,
-										"interpolatorType": 1,
-										"value": 6.283185307179586
-									},
-									{
-										"time": 3300.1833333333334,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3333.8,
-										"interpolatorType": 1,
-										"value": 1.2217211589243653
-									},
-									{
-										"time": 3600.1833333333334,
+										"time": 300.1166666666667,
 										"interpolatorType": 1,
 										"value": 6.283185307179586
 									}
@@ -118604,162 +118443,7 @@
 										"value": -3.141592653589793
 									},
 									{
-										"time": 500.2833333333333,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 600.0166666666667,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 600.0333333333333,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 800.3,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 900.0333333333333,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 900.05,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 1100.3166666666666,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 1200.05,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 1200.0666666666666,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 1400.3333333333333,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 1500.0666666666666,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 1500.0833333333333,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 1700.35,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 1800.0833333333333,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 1800.1,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 2000.3666666666666,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 2100.1,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 2100.116666666667,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 2300.3833333333337,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 2400.116666666667,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 2400.133333333333,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 2600.4,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 2700.133333333333,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 2700.15,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 2900.416666666667,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 3000.15,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 3000.1666666666665,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 3200.4333333333334,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 3300.1666666666665,
-										"interpolatorType": 1,
-										"value": -9.42477796076938
-									},
-									{
-										"time": 3300.1833333333334,
-										"interpolatorType": 1,
-										"value": -3.141592653589793
-									},
-									{
-										"time": 3500.4500000000003,
-										"interpolatorType": 1,
-										"value": -6.981317007977318
-									},
-									{
-										"time": 3600.1833333333334,
+										"time": 300.1166666666667,
 										"interpolatorType": 1,
 										"value": -9.42477796076938
 									}
@@ -118834,547 +118518,7 @@
 										"value": 0
 									},
 									{
-										"time": 360,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 372,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 375,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 387,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 480,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 492,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 495,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 507,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 600,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 612,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 615,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 627,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 720,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 732,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 735,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 747,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 840,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 852,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 855,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 867,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 960,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 972,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 975,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 987,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1080,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1092,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1095,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1107,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1200,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1212,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1215,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1227,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1320,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1332,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1335,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1347,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1440,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1452,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1455,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1467,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1560,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1572,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1575,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1587,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1680,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1692,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1695,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1707,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1800,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1812,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1815,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1827,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1920,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1932,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1935,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 1947,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2040,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2052,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2055,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2067,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2160,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2172,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2175,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2187,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2280,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2292,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2295,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2307,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2400,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2412,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2415,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2427,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2520,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2532,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2535,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2547,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2640,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2652,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2655,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2667,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2760,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2772,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2775,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2787,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2880,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2892,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2895,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 2907,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3000,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3012,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3015,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3027,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3120,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3132,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3135,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3147,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3240,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3252,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3255,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3267,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3360,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3372,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3375,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3387,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3480,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3492,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3495,
-										"interpolatorType": 1,
-										"value": 1
-									},
-									{
-										"time": 3507,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
 										"value": 0
 									},
@@ -119458,547 +118602,7 @@
 										"value": 0
 									},
 									{
-										"time": 360,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 372,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 375,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 387,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 480,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 492,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 495,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 507,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 600,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 612,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 615,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 627,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 720,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 732,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 735,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 747,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 840,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 852,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 855,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 867,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 960,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 972,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 975,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 987,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1080,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1092,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1095,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1107,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1200,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1212,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1215,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1227,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1320,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1332,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1335,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1347,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1440,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1452,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1455,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1467,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1560,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1572,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1575,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1587,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1680,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1692,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1695,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1707,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1800,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1812,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1815,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1827,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1920,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1932,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1935,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 1947,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2040,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2052,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2055,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2067,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2160,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2172,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2175,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2187,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2280,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2292,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2295,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2307,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2400,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2412,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2415,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2427,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2520,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2532,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2535,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2547,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2640,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2652,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2655,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2667,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2760,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2772,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2775,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2787,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2880,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2892,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2895,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 2907,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3000,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3012,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3015,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3027,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3120,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3132,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3135,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3147,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3240,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3252,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3255,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3267,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3360,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3372,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3375,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3387,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3480,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3492,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3495,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3507,
-										"interpolatorType": 1,
-										"value": 0
-									},
-									{
-										"time": 3600,
+										"time": 300,
 										"interpolatorType": 1,
 										"value": 0
 									},
