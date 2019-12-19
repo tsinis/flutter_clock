@@ -43,6 +43,9 @@ void main() async {
 
   // Warm the cache up.
   _warmupFlare().then((_) {
+    // Run in fullscreen mode
+    SystemChrome.setEnabledSystemUIOverlays([]);
+
     // This creates a clock that enables you to customize it.
     //
     // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
