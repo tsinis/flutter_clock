@@ -24,6 +24,10 @@ Future<void> _warmupFlare() async {
 }
 
 void main() async {
+  // Newer versions of Flutter require initializing widget-flutter binding
+  // prior to warming up the cache.
+  WidgetsFlutterBinding.ensureInitialized();
+
   // A temporary measure until Platform supports web and TargetPlatform supports
   // macOS.
   if (!kIsWeb && Platform.isMacOS) {
@@ -33,10 +37,6 @@ void main() async {
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   }
 
-  // Newer versions of Flutter require initializing widget-flutter binding
-  // prior to warming up the cache.
-  WidgetsFlutterBinding.ensureInitialized();
-
   // Don't prune the Flare cache, keep loaded Flare files warm and ready
   // to be re-displayed.
   FlareCache.doesPrune = false;
@@ -45,7 +45,9 @@ void main() async {
   _warmupFlare().then((_) {
     // Run in fullscreen mode
     SystemChrome.setEnabledSystemUIOverlays([]);
-
+    // Run in landscape mode
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft])
+    .then((_) {
     // This creates a clock that enables you to customize it.
     //
     // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
@@ -55,6 +57,6 @@ void main() async {
     //
     // Your job is to edit [AnalogClock], or replace it with your own clock
     // widget. (Look in analog_clock.dart for more details!)
-    runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));
+    runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));});
   });
 }

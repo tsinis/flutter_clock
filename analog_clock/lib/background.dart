@@ -28,6 +28,7 @@ class _AnimationController extends FlareControls {
   @override
   void initialize(FlutterActorArtboard artboard) {
     super.initialize(artboard);
+    play('thermometer');
     _dayNightAnimation = artboard.getAnimation(_dayNightAnimationName);
     _timeAnimation = artboard.getAnimation(_timeAnimationName);
     play(_dayNightAnimationName);
@@ -37,7 +38,7 @@ class _AnimationController extends FlareControls {
   @override
   bool advance(FlutterActorArtboard artboard, double elapsed) {
     final DateTime _now = DateTime.now();
-    _timeAnimation.apply(_now.second / 60 + _now.minute,artboard,1.0);
+    _timeAnimation.apply(_now.second / 60 + _now.minute, artboard, 1.0);
     _dayNightAnimation.apply(_now.minute / 60 + _now.hour, artboard, 1.0);
     return true;
   }
