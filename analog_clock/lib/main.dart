@@ -46,7 +46,7 @@ void main() async {
     // Run in fullscreen mode
     SystemChrome.setEnabledSystemUIOverlays([]);
     // Run in landscape mode
-    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft])
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
     .then((_) {
     // This creates a clock that enables you to customize it.
     //
