@@ -17,15 +17,15 @@ class AnalogClock extends StatefulWidget {
   _AnalogClockState createState() => _AnalogClockState();
 }
 
-class _AnalogClockState extends State<AnalogClock>{
+class _AnalogClockState extends State<AnalogClock> {
   // var _temperature = '';
   // var _condition = '';
 
   // @override
   // void initState() {
   //   super.initState();
-    // widget.model.addListener(_updateModel);
-    // _updateModel();
+  // widget.model.addListener(_updateModel);
+  // _updateModel();
   // }
 
   // @override
@@ -55,17 +55,17 @@ class _AnalogClockState extends State<AnalogClock>{
     // final time = DateFormat.Hms().format(DateTime.now());
 
     return
-    //  Semantics.fromProperties(
-    //   properties: SemanticsProperties(
-    //     label: 'Analog clock with time $time',
-    //     value: time,
-    //   ),
-    //   child:
-      Container(
-        color: Theme.of(context).brightness == Brightness.light
-            ? Colors.grey[200]
-            : Colors.grey[900],
-        child: RiveAnimation(),
+        //  Semantics.fromProperties(
+        //   properties: SemanticsProperties(
+        //     label: 'Analog clock with time $time',
+        //     value: time,
+        //   ),
+        //   child:
+        Container(
+      color: Theme.of(context).brightness == Brightness.light
+          ? Colors.grey[200]
+          : Colors.grey[900],
+      child: RiveAnimation(),
       // ),
     );
   }
