@@ -10,7 +10,11 @@ dependencies:
     sdk: flutter
   flutter_clock_helper:
     path: ../flutter_clock_helper
-  flare_flutter: ^1.8.3
+  flare_flutter:
+    git:
+      url: git://github.com/tsinis/Flare-Flutter.git
+      ref: stable
+      path: flare_flutter
 
 dev_dependencies:
   flutter_test:
