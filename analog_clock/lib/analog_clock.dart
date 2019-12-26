@@ -63,8 +63,8 @@ class _AnalogClockState extends State<AnalogClock> {
         //   child:
         Container(
       color: Theme.of(context).brightness == Brightness.light
-          ? Colors.grey[200]
-          : Colors.grey[900],
+          ? const Color(0xFFD1C6BD)
+          : const Color(0xFF1D130A),
       child: RiveAnimation(),
       // ),
     );
