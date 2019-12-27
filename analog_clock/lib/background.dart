@@ -1,61 +1,34 @@
-import 'dart:async';
-
 import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controls.dart';
-import 'package:flutter/widgets.dart';
 
-class RiveAnimation extends StatefulWidget {
-  @override
-  _RiveAnimationState createState() => _RiveAnimationState();
-}
-
-class _RiveAnimationState extends State<RiveAnimation> {
-  _AnimationController _animationController = _AnimationController();
-
-  @override
-  Widget build(BuildContext context) {
-    return FlareActor('assets/FlutterClock.flr',
-        animation: 'background', controller: _animationController);
-  }
-}
-
-class _AnimationController extends FlareControls {
+class RiveAnimationController extends FlareControls {
+  static const double _dontMixAnimations = 1;
+  static double _animationTime = 0;
+  static DateTime _now;
+  static ActorNode _temperature;
+  static ActorAnimation _cuckooAnimation;
   static ActorAnimation _timeAnimation;
-  ActorAnimation _cuckooAnimation;
-  ActorAnimation _steam;
-  ActorNode _temperature;
-  // ActorNode _rotateGear;
 
   @override
   void initialize(FlutterActorArtboard artboard) {
     super.initialize(artboard);
     _temperature = artboard.getNode('thermometer_liquid');
-    // _rotateGear = artboard.getNode('main_gear');
     _timeAnimation = artboard.getAnimation('time');
     _cuckooAnimation = artboard.getAnimation('cuckoo');
-    _steam = artboard.getAnimation('steam');
   }
 
   @override
   bool advance(FlutterActorArtboard artboard, double elapsed) {
-    final DateTime _now = DateTime.now();
-
-    // _rotateGear.rotation = _now.second.toDouble();
-
-    Timer.periodic(Duration(seconds: 5), (_) {
-      // print('lol');
-      _steam.apply(_now.millisecond / 1000, artboard, 1.0);
-      // play('steam');
-    });
-
+    _now = DateTime.now();
     _temperature.y = -(0).toDouble();
-    (_now.minute == 0)
-        ?
-        _cuckooAnimation.apply(
-            _now.millisecond / 1000 + _now.second, artboard, 1.0)
-        : _timeAnimation.apply(
-            _now.second / 60 + _now.minute + _now.hour * 60, artboard, 1.0);
+    if (_now.minute == 0) {
+      _animationTime += elapsed;
+      _cuckooAnimation.apply(_animationTime, artboard, _dontMixAnimations);
+    } else {
+      _animationTime = 0;
+      _timeAnimation.apply(_now.second / 60 + _now.minute + _now.hour * 60,
+          artboard, _dontMixAnimations);
+    }
     return true;
   }
 }

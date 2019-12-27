@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter_clock_helper/model.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/semantics.dart';
@@ -49,24 +50,15 @@ class _AnalogClockState extends State<AnalogClock> {
   //     _condition = widget.model.weatherString;
   //   });
   // }
-
+  RiveAnimationController _animationController = RiveAnimationController();
   @override
   Widget build(BuildContext context) {
-    // final time = DateFormat.Hms().format(DateTime.now());
-
-    return
-        //  Semantics.fromProperties(
-        //   properties: SemanticsProperties(
-        //     label: 'Analog clock with time $time',
-        //     value: time,
-        //   ),
-        //   child:
-        Container(
+    return Container(
       color: Theme.of(context).brightness == Brightness.light
           ? const Color(0xFFD1C6BD)
           : const Color(0xFF1D130A),
-      child: RiveAnimation(),
-      // ),
+      child: FlareActor('assets/FlutterClock.flr',
+          animation: 'background', controller: _animationController),
     );
   }
 }

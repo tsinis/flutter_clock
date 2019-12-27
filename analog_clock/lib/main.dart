@@ -24,8 +24,8 @@ Future<void> _warmupFlare() async {
 }
 
 void main() async {
-  // Newer versions of Flutter require initializing widget-flutter binding
-  // prior to warming up the cache.
+  // Newer versions of Flutter require initializing widget-flutter
+  // binding prior to warming up the animation cache.
   WidgetsFlutterBinding.ensureInitialized();
 
   // A temporary measure until Platform supports web and TargetPlatform supports
@@ -37,11 +37,11 @@ void main() async {
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   }
 
-  // Don't prune the Flare cache, keep loaded Flare files warm and ready
-  // to be re-displayed.
+  // Don't prune the Flare cache, keep loaded animation
+  // files warm and ready to be re-displayed.
   FlareCache.doesPrune = false;
 
-  // Warm the cache up.
+  // Warm the animation cache up.
   _warmupFlare().then((_) {
 
     // Run in fullscreen mode
