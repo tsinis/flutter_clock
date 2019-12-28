@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/semantics.dart';
 // import 'package:intl/intl.dart';
 
-import 'background.dart';
+import 'animation_controller.dart';
 
 class AnalogClock extends StatefulWidget {
   const AnalogClock(this.model);
@@ -50,13 +50,14 @@ class _AnalogClockState extends State<AnalogClock> {
   //     _condition = widget.model.weatherString;
   //   });
   // }
-  RiveAnimationController _animationController = RiveAnimationController();
+  RiveAnimationController _animationController =
+      RiveAnimationController('_temperature');
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Theme.of(context).brightness == Brightness.light
           ? const Color(0xFFD1C6BD)
-          : const Color(0xFF1D130A),
+          : const Color(0xFF1A120D),
       child: FlareActor('assets/FlutterClock.flr',
           animation: 'background', controller: _animationController),
     );
