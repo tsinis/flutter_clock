@@ -1,12 +1,10 @@
-// Copyright 2019 The Chromium Authors. All rights reserved.
+// Copyright 2020, Roman Cinis. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter_clock_helper/model.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/semantics.dart';
-// import 'package:intl/intl.dart';
 
 import 'animation_controller.dart';
 
@@ -19,39 +17,44 @@ class AnalogClock extends StatefulWidget {
 }
 
 class _AnalogClockState extends State<AnalogClock> {
-  // var _temperature = '';
-  // var _condition = '';
+  static String _temperature = '22.0°C';
+  static String _condition = 'sunny';
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  // widget.model.addListener(_updateModel);
-  // _updateModel();
-  // }
+  @override
+  void initState() {
+    super.initState();
+    widget.model.addListener(_updateModel);
+    _updateModel();
+  }
 
-  // @override
-  // void didUpdateWidget(AnalogClock oldWidget) {
-  //   super.didUpdateWidget(oldWidget);
-  //   if (widget.model != oldWidget.model) {
-  //     oldWidget.model.removeListener(_updateModel);
-  //     widget.model.addListener(_updateModel);
-  //   }
-  // }
+  @override
+  void didUpdateWidget(AnalogClock oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.model != oldWidget.model) {
+      oldWidget.model.removeListener(_updateModel);
+      widget.model.addListener(_updateModel);
+    }
+  }
 
-  // @override
-  // void dispose() {
-  //   widget.model.removeListener(_updateModel);
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+    widget.model.removeListener(_updateModel);
+    super.dispose();
+  }
 
-  // void _updateModel() {
-  //   setState(() {
-  //     _temperature = widget.model.temperatureString;
-  //     _condition = widget.model.weatherString;
-  //   });
-  // }
-  RiveAnimationController _animationController =
-      RiveAnimationController('_temperature');
+  void _updateModel() {
+    setState(
+      () {
+        _animationController.temperatureFromHelper =
+            widget.model.temperatureString;
+        _animationController.conditionFromHelper = widget.model.weatherString;
+      },
+    );
+  }
+
+  RiveAnimationController _animationController = RiveAnimationController(
+      temperatureFromHelper: _temperature, conditionFromHelper: _condition);
+
   @override
   Widget build(BuildContext context) {
     return Container(

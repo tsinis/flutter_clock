@@ -5,20 +5,29 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controller.dart';
 
 class RiveAnimationController extends FlareController {
-  RiveAnimationController(String _temperature);
+  RiveAnimationController(
+      {this.temperatureFromHelper, this.conditionFromHelper});
+
+  String conditionFromHelper;
+  String temperatureFromHelper;
 
   static const double _dontMixAnimations = 1.0;
-  static DateTime _now;
-  static ActorNode _temperature;
-  static ActorAnimation _timeAnimation;
 
+  static ActorNode _condition;
+  static DateTime _now;
   static FlareAnimationLayer _cuckooAnimation;
   static FlareAnimationLayer _steam;
+  static ActorNode _temperature;
+  // static ActorNode _weather;
+  static ActorAnimation _timeAnimation;
 
   @override
   void initialize(FlutterActorArtboard artboard) {
+    _condition = artboard.getNode(conditionFromHelper);
+    // _weather = artboard.getNode('weather');
     _temperature = artboard.getNode('thermometer_mercury_position');
     _timeAnimation = artboard.getAnimation('time');
+
     _cuckooAnimation = FlareAnimationLayer()
       ..animation = artboard.getAnimation('cuckoo')
       ..mix = _dontMixAnimations;
@@ -29,6 +38,9 @@ class RiveAnimationController extends FlareController {
 
   @override
   bool advance(FlutterActorArtboard artboard, double elapsed) {
+    _condition = artboard.getNode(conditionFromHelper);
+    _condition.opacity = 1.0;
+
     _now = DateTime.now();
 
     _temperature.y = -(0).toDouble();
