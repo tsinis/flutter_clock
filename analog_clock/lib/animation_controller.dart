@@ -4,6 +4,8 @@ import 'package:flare_flutter/flare.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controller.dart';
 
+import 'temperature_converter.dart';
+
 class RiveAnimationController extends FlareController {
   RiveAnimationController(
       {this.temperatureFromHelper, this.conditionFromHelper});
@@ -13,46 +15,47 @@ class RiveAnimationController extends FlareController {
 
   static const double _dontMixAnimations = 1.0;
 
-  static ActorNode _condition;
-  static DateTime _now;
-  static FlareAnimationLayer _cuckooAnimation;
-  static FlareAnimationLayer _steam;
   static ActorNode _temperature;
-  // static ActorNode _weather;
-  static ActorAnimation _timeAnimation;
+
+  static ActorAnimation _time;
+  static ActorAnimation _condition;
+
+  static FlareAnimationLayer _cuckoo;
+  static FlareAnimationLayer _bubbles;
+
+  static DateTime _now;
 
   @override
   void initialize(FlutterActorArtboard artboard) {
-    _condition = artboard.getNode(conditionFromHelper);
-    // _weather = artboard.getNode('weather');
     _temperature = artboard.getNode('thermometer_mercury_position');
-    _timeAnimation = artboard.getAnimation('time');
 
-    _cuckooAnimation = FlareAnimationLayer()
+    _time = artboard.getAnimation('time');
+
+    _cuckoo = FlareAnimationLayer()
       ..animation = artboard.getAnimation('cuckoo')
       ..mix = _dontMixAnimations;
-    _steam = FlareAnimationLayer()
-      ..animation = artboard.getAnimation('steam')
+    _bubbles = FlareAnimationLayer()
+      ..animation = artboard.getAnimation('thermometer_bubbles')
       ..mix = _dontMixAnimations;
   }
 
   @override
   bool advance(FlutterActorArtboard artboard, double elapsed) {
-    _condition = artboard.getNode(conditionFromHelper);
-    _condition.opacity = 1.0;
+    _condition = artboard.getAnimation(conditionFromHelper);
+    _condition.apply(0, artboard, _dontMixAnimations);
+
+    _temperature.y = mercuryPosition(temperatureFromHelper);
 
     _now = DateTime.now();
 
-    _temperature.y = -(0).toDouble();
-
-    _steam.time = (_steam.time + elapsed) % _steam.duration;
-    _steam.apply(artboard);
+    _bubbles.time = (_bubbles.time + elapsed) % _bubbles.duration;
+    _bubbles.apply(artboard);
 
     if (_now.minute == 0) {
-      _cuckooAnimation.time = _cuckooAnimation.time + elapsed;
-      _cuckooAnimation.apply(artboard);
+      _cuckoo.time = _cuckoo.time + elapsed;
+      _cuckoo.apply(artboard);
     } else {
-      _timeAnimation.apply(_now.second / 60 + _now.minute + _now.hour * 60,
+      _time.apply(_now.second / 60 + _now.minute + _now.hour * 60,
           artboard, _dontMixAnimations);
     }
     return true;

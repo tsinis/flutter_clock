@@ -17,15 +17,11 @@ class AnalogClock extends StatefulWidget {
 }
 
 class _AnalogClockState extends State<AnalogClock> {
-  static String _temperature = '22.0°C';
   static String _condition = 'sunny';
+  static String _temperature = '22.0°C';
 
-  @override
-  void initState() {
-    super.initState();
-    widget.model.addListener(_updateModel);
-    _updateModel();
-  }
+  RiveAnimationController _animationController = RiveAnimationController(
+      temperatureFromHelper: _temperature, conditionFromHelper: _condition);
 
   @override
   void didUpdateWidget(AnalogClock oldWidget) {
@@ -42,6 +38,13 @@ class _AnalogClockState extends State<AnalogClock> {
     super.dispose();
   }
 
+  @override
+  void initState() {
+    super.initState();
+    widget.model.addListener(_updateModel);
+    _updateModel();
+  }
+
   void _updateModel() {
     setState(
       () {
@@ -51,9 +54,6 @@ class _AnalogClockState extends State<AnalogClock> {
       },
     );
   }
-
-  RiveAnimationController _animationController = RiveAnimationController(
-      temperatureFromHelper: _temperature, conditionFromHelper: _condition);
 
   @override
   Widget build(BuildContext context) {
