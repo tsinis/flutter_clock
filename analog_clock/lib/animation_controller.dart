@@ -55,8 +55,8 @@ class RiveAnimationController extends FlareController {
       _cuckoo.time = _cuckoo.time + elapsed;
       _cuckoo.apply(artboard);
     } else {
-      _time.apply(_now.second / 60 + _now.minute + _now.hour * 60,
-          artboard, _dontMixAnimations);
+      _time.apply(_now.second / 60 + _now.minute + _now.hour * 60, artboard,
+          _dontMixAnimations);
     }
     return true;
   }

@@ -1,3 +1,5 @@
+import 'dart:math' show max;
+
 double mercuryPosition(String _temperatureFromHelper) {
   String _celsiusWOUnit;
   double _celsius;
@@ -9,7 +11,7 @@ double mercuryPosition(String _temperatureFromHelper) {
     _celsiusWOUnit = _removeDegreesUnit(_temperatureFromHelper);
     _celsius = double.parse(_celsiusWOUnit);
   }
-  _celsius = (_celsius - 60) * -2.35;
+  _celsius = max(0, (_celsius - 60) * -2.35);
   return _celsius;
 }
 
