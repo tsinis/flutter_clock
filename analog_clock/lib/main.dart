@@ -24,7 +24,6 @@ Future<void> _warmupFlare() async {
 }
 
 void main() async {
-
   // Newer versions of Flutter require initializing widget-flutter
   // binding prior to warming up the animation cache.
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,7 +43,6 @@ void main() async {
 
   // Warm the animation cache up.
   _warmupFlare().then((_) {
-
     // Run in fullscreen mode
     SystemChrome.setEnabledSystemUIOverlays([]);
     // Run in landscape mode
@@ -52,7 +50,6 @@ void main() async {
     SystemChrome.setPreferredOrientations(
             [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
         .then((_) {
-
       // This creates a clock that enables you to customize it.
       //
       // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
