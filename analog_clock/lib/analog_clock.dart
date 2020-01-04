@@ -10,6 +10,7 @@ import 'animation_controller.dart';
 
 class AnalogClock extends StatefulWidget {
   const AnalogClock(this.model);
+
   final ClockModel model;
 
   @override

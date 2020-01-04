@@ -24,6 +24,7 @@ Future<void> _warmupFlare() async {
 }
 
 void main() async {
+
   // Newer versions of Flutter require initializing widget-flutter
   // binding prior to warming up the animation cache.
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,8 +47,8 @@ void main() async {
 
     // Run in fullscreen mode
     SystemChrome.setEnabledSystemUIOverlays([]);
-
     // Run in landscape mode
+
     SystemChrome.setPreferredOrientations(
             [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
         .then((_) {

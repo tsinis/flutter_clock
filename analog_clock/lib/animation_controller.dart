@@ -13,17 +13,13 @@ class RiveAnimationController extends FlareController {
   String conditionFromHelper;
   String temperatureFromHelper;
 
-  static const double _dontMixAnimations = 1.0;
-
-  static ActorNode _temperature;
-
-  static ActorAnimation _time;
-  static ActorAnimation _condition;
-
-  static FlareAnimationLayer _cuckoo;
   static FlareAnimationLayer _bubbles;
-
+  static ActorAnimation _condition;
+  static FlareAnimationLayer _cuckoo;
+  static const double _dontMixAnimations = 1.0;
   static DateTime _now;
+  static ActorNode _temperature;
+  static ActorAnimation _time;
 
   @override
   void initialize(FlutterActorArtboard artboard) {
