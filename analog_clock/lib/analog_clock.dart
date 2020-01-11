@@ -2,12 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flare_flutter/flare_actor.dart';
-import 'package:flutter_clock_helper/model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_clock_helper/model.dart';
+
+import 'package:flare_flutter/flare_actor.dart';
 
 import 'animation_controller.dart';
 
+// Most code here comes as default Google code for analog clock and working
+// with their helper package. Adding Rive (Flare) animation Controller, changes
+// are just in those two methods: _updateModel (slightly) + build (completely).
 class AnalogClock extends StatefulWidget {
   const AnalogClock(this.model);
 
@@ -18,11 +22,9 @@ class AnalogClock extends StatefulWidget {
 }
 
 class _AnalogClockState extends State<AnalogClock> {
-  static String _condition = 'sunny';
-  static String _temperature = '22.0°C';
-
-  RiveAnimationController _animationController = RiveAnimationController(
-      temperatureFromHelper: _temperature, conditionFromHelper: _condition);
+  // Removing unused variables and declare a Controller for Rive animations.
+  static final TimeAnimationController _animationController =
+      TimeAnimationController(temperature: '22.0°C', weather: 'sunny');
 
   @override
   void didUpdateWidget(AnalogClock oldWidget) {
@@ -46,16 +48,17 @@ class _AnalogClockState extends State<AnalogClock> {
     _updateModel();
   }
 
+  // Passes temperature and weather to animation controller directly.
   void _updateModel() {
     setState(
       () {
-        _animationController.temperatureFromHelper =
-            widget.model.temperatureString;
-        _animationController.conditionFromHelper = widget.model.weatherString;
+        _animationController.temperature = widget.model.temperatureString;
+        _animationController.weather = widget.model.weatherString;
       },
     );
   }
 
+  // Play background animation in loop, control other animations in Controller.
   @override
   Widget build(BuildContext context) {
     return Container(

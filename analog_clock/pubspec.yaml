@@ -1,5 +1,5 @@
 name: analog_clock
-description: Analog clock.
+description: Steampunk like, analog clock for Flutter Clock contest.
 version: 1.0.0+1
 
 environment:

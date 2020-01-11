@@ -1,23 +1,24 @@
-// Copyright 2019 The Chromium Authors. All rights reserved.
+// Copyright 2020, Roman Cinis. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:io';
+import 'dart:io' show Platform;
 
-import 'package:flutter/services.dart';
+import 'package:flutter/services.dart'
+    show rootBundle, SystemChrome, DeviceOrientation;
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show WidgetsFlutterBinding, runApp;
 import 'package:flutter_clock_helper/customizer.dart';
 import 'package:flutter_clock_helper/model.dart';
 import 'package:flare_flutter/flare_cache.dart';
 
 import 'analog_clock.dart';
 
-//Path to animations, that needs to be prechached
+// Path to animations, that needs to be pre-cached.
 const _filesToWarmup = ["assets/FlutterClock.flr"];
 
-//Function to cache animations
-Future<void> _warmupFlare() async {
+// Function to cache Rive (ex Flare) animations.
+Future<void> _warmupAnimations() async {
   for (final filename in _filesToWarmup) {
     await cachedActor(rootBundle, filename);
   }
@@ -37,16 +38,15 @@ void main() async {
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   }
 
-  // Don't prune the Flare cache, keep loaded animation
+  // Don't prune the Rive (ex Flare) cache, keep loaded animation
   // files warm and ready to be re-displayed.
   FlareCache.doesPrune = false;
 
   // Warm the animation cache up.
-  _warmupFlare().then((_) {
-    // Run in fullscreen mode
+  _warmupAnimations().then((_) {
+    // Run clock in full-screen mode.
     SystemChrome.setEnabledSystemUIOverlays([]);
-    // Run in landscape mode
-
+    // Run clock in landscape mode.
     SystemChrome.setPreferredOrientations(
             [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
         .then((_) {
@@ -55,10 +55,7 @@ void main() async {
       // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
       //  - A clock widget (in this case, [AnalogClock])
       //  - A model (provided to you by [ClockModel])
-      // For more information, see the flutter_clock_helper package.
-      //
-      // Your job is to edit [AnalogClock], or replace it with your own clock
-      // widget. (Look in analog_clock.dart for more details!)
+      // For more information, see the flutter_clock_helper package
       runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));
     });
   });
