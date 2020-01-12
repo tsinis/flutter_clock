@@ -13,6 +13,6 @@ It has a light theme and a dark theme, **cuckoo bird** and displays sample weath
 
 Also you can see something more about it, in my blog (link will be provided later), “How it’s made” video of animation preparing (all assets and app itself, are made with free online tools) can be found here:
 
-* For more information, see the commented code inside [analog_clock](./analog_clock/).
+* For more information, see the inside [analog_clock](./analog_clock/).
 * For Flutter Clock Helper code, see inside *untouched* [flutter_clock_helper](./flutter_clock_helper) folder, in this GitHub repo.
 * For more info about handmade vector assets, used in [Rive](https://rive.app) animations, please, take a look at [vector_assets](./vector_assets) folder.

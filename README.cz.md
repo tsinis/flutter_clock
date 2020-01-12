@@ -14,7 +14,6 @@ Obsahují tmavé a světlé téma, **kukačku** a taky zobrazují počasí a tep
 
 Pokud máte zájem o to, jak byli animace připravovaný, naleznete za nedlouho článek v mém blogu, nebo můžete se podívat na video tady:
 
-* Samotný kód tohoto projektu (včetně mých komentářů), se nachází ve složce [analog_clock](./analog_clock).
-
+* Samotný kód tohoto projektu (včetně mých komentářů) а další informace, se nacházejí ve složce [analog_clock](./analog_clock).
 * Kód pomocného baličku Flutter Clock Helper se nachází v *nedotčené* složce [flutter_clock_helper](./flutter_clock_helper) tohoto repositáře GitHub.
-* Další informace o ručně zpracované vektorové grafice použité pro animace [Rive](https://rive.app), naleznete ve složce [vector_assets](./vector_assets).
+* Další informace o ručně zpracované vektorové grafice, použité pro animace [Rive](https://rive.app), naleznete ve složce [vector_assets](./vector_assets).

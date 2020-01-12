@@ -4,6 +4,7 @@
 
 ## Obsah:
 * [Popis](#Popis)
+* [Licence](#Licence)
 * [Změny](#Změny)
 * [Známé problémy](#Známé-problémy)
   * [Generovaní APK souborů](#Generovaní-APK-souborů)
@@ -12,7 +13,11 @@
 
 ----
 ## Popis
-Tady naleznete kód tohoto projektu Steampankových hodinek pro soutěž Flutter Clock, Kód se řidí pravidly soutěže, které jsou k dispozici na webu: [flutter.dev/clock](https://flutter.dev/clock).
+Tady naleznete kód tohoto projektu Steampankových hodinek pro soutěž Flutter Clock, Kód se řidí pravidly soutěže, které jsou k dispozici na webu, v anglickém jazyce: [flutter.dev/clock](https://flutter.dev/clock).
+
+## Licence
+Kód je licencován na základě příslušné licence s otevřeným zdrojovým kódem (licence BSD tzv. Kalifornské univerzity v Berkeley), podklady ve složce [assets](./assets) jsou licencována s licencí CC BY 4.0 a písmo ve složce [third_party](./third_party), obsahuje licenci OFL. Soubor s názvem LICENSE najdete uvnitř adresářů, který obsahuje kopii licence, s plným textem této licence, v anglickém jazyce.
+
 ## Změny
 Hlavní změny oproti původnímu kódu, z příkladu analogových hodinek, poskynutého firmou Google:
 * odstraněný nevyužité soubory a složky,

@@ -4,6 +4,7 @@
 
 ## Table of content:
 * [Description](#Description)
+* [Licenses](#Licenses)
 * [Changes](#Changes)
 * [Know Issues](#Know-Issues)
   * [Building APK files](#Building-APK-Files)
@@ -14,6 +15,9 @@
 
 ## Description
 Here you will find a code base of this Steampunk Flutter Clock project and it’s guided by the contest rules, you can read more about this rules here: [flutter.dev/clock](https://flutter.dev/clock).
+
+## Licenses
+Code is licensed under an appropriate open source license (BSD aka University of California license), assets in [assets](./assets) folder are licensed with CC BY 4.0 license and font in [third_party](./third_party) folder, contain OFL license. You can find file named LICENSE inside folders, that contains a copy of the license, with full text of that license.
 
 ## Changes
 

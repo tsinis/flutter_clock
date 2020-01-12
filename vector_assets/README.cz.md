@@ -2,7 +2,7 @@
 
 # Vektorová grafika použitá v steampunkových hodinkach Flutter Clock
 
-Veškerá grafika, kterou zde naleznete, byla ručně vytvořena speciálně pro účely použiti v animacích [Rive](https://rive.app) (bývalé Flare), pomoci bezplatných online nástrojů.
+Veškerá grafika, kterou zde naleznete, byla ručně vytvořena speciálně pro účely použiti v animacích [Rive](https://rive.app) (bývalé Flare), pomoci bezplatných online nástrojů. Tato práce podléhá licenci na základě [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs) (Creative Commons Uveďte původ 4.0 Mezinárodní) licence.
 > **Poznámka:** v této chvíli (leden 2020) jsou tu stále jisté problémy s importem SVG podkladů do Rive. Proto zde nenajdete žádné radiální přechody a lineárních přechodů je zde pouze nezbytný minimum.
 
 Podklady jsou připravené v bezplatném online redaktoru vektorové grafiky, který se jmenuje [Gravit Designer](https://www.designer.io/) (v tomto případe možnosti “Pro” verze nejsou zapotřebí). Posléze exportované do SVG formátu bez podkladů a nakonec optimalizované (s redukci rozměrů souborů) a importované do Rive. *Z technických důvodů všechny podklady, ve finální animaci, použitý nebyli.*
