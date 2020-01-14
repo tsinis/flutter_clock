@@ -64,7 +64,7 @@ class _AnalogClockState extends State<AnalogClock> {
     return Container(
       color: Theme.of(context).brightness == Brightness.light
           ? const Color(0xFFD1C6BD)
-          : const Color(0xFF1A120D),
+          : const Color(0xFF3F2D15),
       child: FlareActor('assets/FlutterClock.flr',
           animation: 'background', controller: _animationController),
     );
