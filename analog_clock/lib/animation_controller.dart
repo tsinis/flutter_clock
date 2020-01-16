@@ -68,7 +68,7 @@ class TimeAnimationController extends FlareController {
     if (_now.minute == 0) {
       // Cuckoo bird animation is one minute long. It stops time animation,
       // and showing itself at beginning of every hour.
-      _cuckoo.time = _cuckoo.time + elapsed;
+      _cuckoo.time = (_cuckoo.time + elapsed) % _cuckoo.duration;
       _cuckoo.apply(artboard);
     } else {
       // Time animation is 24 minutes long, and it's speed is just 1FPS.
