@@ -20,7 +20,8 @@ const _filesToWarmup = ["assets/FlutterClock.flr"];
 // Function to cache Rive (ex Flare) animations.
 Future<void> _warmupAnimations() async {
   for (final filename in _filesToWarmup) {
-    await cachedActor(rootBundle, filename);
+    // await cachedActor(rootBundle, filename);
+    print('done');
   }
 }
 

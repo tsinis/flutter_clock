@@ -70,16 +70,14 @@ packages:
       name: flare_dart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.2"
+    version: "2.3.3"
   flare_flutter:
     dependency: "direct main"
     description:
-      path: flare_flutter
-      ref: stable
-      resolved-ref: "0f4cb1e3b439bf4b06fa3ef8a28f8bc303f0720b"
-      url: "git://github.com/tsinis/Flare-Flutter.git"
-    source: git
-    version: "1.8.3"
+      name: flare_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   flutter:
     dependency: "direct main"
     description: flutter
