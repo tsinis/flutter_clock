@@ -48,9 +48,9 @@ classpath 'com.android.tools.build:gradle:3.4.2'
 ```
 Potíže by měli tímto zmizet.
 #### Chabý výkon
-Všechny animace jsou nastavené na frekvencí snímku do **25 FPS**, ale v tuto chvíli (leden 2020), na některých Android zařízeních, nejsou animace plynulé. Je tady hned několik otevřených případů v [Issues](https://github.com/2d-inc/Flare-Flutter/issues), repositáře flare_flutter, které se tohoto problému tykají a Rive tým se problémem zabývá. S velkou pravděpodobnosti vydají ještě letos runtime i pro platformu Android (alespoň tak je uvedeno v jejích [Roadmap](https://portal.productboard.com/rive/1-roadmap/c/56-android-runtime)), tak že v závislosti na tom, kdy toto čtete se u vás problém může nebo nemusí projevit. Pokud ale přece jenom výsledný FPS není dostačující — zkuste v závislostech změnit oficiální baliček flare_flutter na [můj fork](https://github.com/tsinis/flare-flutter) verze 1.8.3, s vypnutým vyhlazováním. Uvnitř [pubspec.yaml](./pubspec.yaml) (v tomto kořenovém adresáři) změňte řádek:
+Všechny animace jsou nastavené na frekvencí snímku do **25 FPS**, ale v tuto chvíli (leden 2020), na některých Android zařízeních, nejsou animace plynulé. Je tady hned několik otevřených případů v [Issues](https://github.com/2d-inc/Flare-Flutter/issues), repositáře flare_flutter, které se tohoto problému tykají a Rive tým se problémem zabývá. S velkou pravděpodobnosti vydají ještě letos runtime i pro platformu Android (alespoň tak je uvedeno v jejích [Roadmap](https://portal.productboard.com/rive/1-roadmap/c/56-android-runtime)), tak že v závislosti na tom, kdy toto čtete se u vás problém může nebo nemusí projevit. Pokud ale přece jenom výsledný FPS není dostačující — zkuste v závislostech změnit oficiální baliček flare_flutter na [můj fork](https://github.com/tsinis/flare-flutter) verze 2.0.1, s vypnutým vyhlazováním. Uvnitř [pubspec.yaml](./pubspec.yaml) (v tomto kořenovém adresáři) změňte řádek:
 ```markdown
-  flare_flutter: ^1.8.3
+  flare_flutter: ^2.0.1
 ```
 na:
 ````markdown
@@ -80,6 +80,6 @@ na:
 | Balíček závislosti **první** strany | [flutter_clock_helper](../flutter_clock_helper) |
 | Název závislosti třetí strany | [Rive](https://rive.app) (bývalé Flare) |
 | Balíček závislosti třetí strany | [flare_flutter](https://pub.dev/packages/flare_flutter) |
-| Verze závislosti třetí strany | [1.8.3](https://github.com/2d-inc/Flare-Flutter) |
+| Verze závislosti třetí strany | [2.0.1](https://github.com/2d-inc/Flare-Flutter) |
 | Kanál závislosti třetí strany | stabilní |
 | Architektura | Výchozí (posluchač) |

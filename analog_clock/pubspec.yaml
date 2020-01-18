@@ -11,6 +11,7 @@ dependencies:
   flutter_clock_helper:
     path: ../flutter_clock_helper
   flare_flutter: ^2.0.1
+  # Uncomment code bellow if you want to try my anti-alias fork of this package
     # git:
     #   url: git://github.com/tsinis/Flare-Flutter.git
     #   ref: stable

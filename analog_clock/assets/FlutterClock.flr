@@ -15,9 +15,9 @@
 			],
 			"clipContents": true,
 			"color": [
-				0.12308541685342789,
-				0.07908237725496292,
-				0.04307989776134491,
+				0.12156862765550613,
+				0.0784313753247261,
+				0.04313725605607033,
 				1
 			],
 			"nodes": [
@@ -34094,7 +34094,7 @@
 					"isCollapsed": false,
 					"clips": [],
 					"isVisible": true,
-					"blendMode": 15,
+					"blendMode": 16,
 					"drawOrder": 159,
 					"transformAffectsStroke": false,
 					"type": "shape"
@@ -34124,9 +34124,9 @@
 					"parent": 540,
 					"opacity": 0.5,
 					"color": [
-						0.1979101151227951,
-						0.1979101151227951,
-						0.1979101151227951,
+						0.20757068693637848,
+						0.1610511839389801,
+						0.13493716716766357,
 						1
 					],
 					"fillRule": 0,
@@ -90461,7 +90461,7 @@
 						585.913330078125,
 						141.23367309570312
 					],
-					"rotation": 1.0471975511965979,
+					"rotation": 1.0471975511965976,
 					"scale": [
 						1,
 						1
@@ -122603,6 +122603,11 @@
 										"time": 60,
 										"interpolatorType": 1,
 										"value": 1
+									},
+									{
+										"time": 60.016666666666666,
+										"interpolatorType": 1,
+										"value": 1
 									}
 								]
 							]
@@ -128089,7 +128094,7 @@
 				},
 				{
 					"name": "hour_day",
-					"fps": 1,
+					"fps": 25,
 					"duration": 24,
 					"isLooping": true,
 					"keyed": [
@@ -129180,7 +129185,7 @@
 				},
 				{
 					"name": "background",
-					"fps": 25,
+					"fps": 30,
 					"duration": 300,
 					"isLooping": true,
 					"keyed": [
@@ -152634,6 +152639,11 @@
 										"cubicX2": 0.58,
 										"cubicY2": 1,
 										"value": 0.75
+									},
+									{
+										"time": 300,
+										"interpolatorType": 1,
+										"value": 1
 									}
 								]
 							]

@@ -2,12 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/material.dart';
 import 'package:flutter_clock_helper/model.dart';
 
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
+
+import 'package:flare_flutter/asset_provider.dart';
+import 'package:flare_flutter/flare_cache_builder.dart';
+import 'package:flare_flutter/provider/asset_flare.dart';
 import 'package:flare_flutter/flare_actor.dart';
 
 import 'animation_controller.dart';
+
+final AssetProvider assetProvider =
+    AssetFlare(bundle: rootBundle, name: 'assets/FlutterClock.flr');
 
 // Most code here comes as default Google code for analog clock and working
 // with their helper package. Adding Rive (Flare) animation Controller, changes
@@ -58,15 +66,34 @@ class _AnalogClockState extends State<AnalogClock> {
     );
   }
 
-  // Play background animation in loop, control other animations in Controller.
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Theme.of(context).brightness == Brightness.light
           ? const Color(0xFFD1C6BD)
-          : const Color(0xFF3F2D15),
-      child: FlareActor('assets/FlutterClock.flr',
-          animation: 'background', controller: _animationController),
+          : const Color(0xFF291C13),
+      child: FlareCacheBuilder(
+        [assetProvider],
+        builder: (context, bool _isWarm) {
+          return !_isWarm
+              ? Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    CircularProgressIndicator(
+                        backgroundColor: Colors.brown[200]),
+                    SizedBox(height: 10.0),
+                    Text(
+                      'Loading animations...',
+                      style: TextStyle(
+                          fontSize: 25.0, fontWeight: FontWeight.w200),
+                    ),
+                  ],
+                )
+              // Loop background animation & control others in Controller.
+              : FlareActor('assets/FlutterClock.flr',
+                  animation: 'background', controller: _animationController);
+        },
+      ),
     );
   }
 }
