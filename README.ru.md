@@ -13,7 +13,7 @@
 
 [![Стимпанк часы для конкурса Flutter Clock](http://img.youtube.com/vi/DQluq00k9hs/maxresdefault.jpg)](http://www.youtube.com/watch?v=DQluq00k9hs)
 
-[Vimeo]( ) or [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
 
 ---
 
@@ -22,4 +22,6 @@
 
 > В каждой из этих двух папок, присутствуют дополнительные видео материалы, по подготовке анимаций или реальному запуску аппликации на реальных устройствах.
 
-* Код вспомогательного  пакета Flutter Clock Helper находится в *нетронутой* папке [flutter_clock_helper](./flutter_clock_helper) в этом репозитории GitHub.
+* Код вспомогательного  пакета Flutter Clock Helper находится в *нетронутой** папке [flutter_clock_helper](./flutter_clock_helper) в этом репозитории GitHub.
+
+[* *лишь переместил туда файл ЛИЦЕНЗИИ Google, так как это их код.*](./flutter_clock_helper/LICENSE)

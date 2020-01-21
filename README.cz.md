@@ -14,7 +14,7 @@ Obsahují tmavé a světlé téma, **kukačku** a taky zobrazují počasí a tep
 
 [![Steampunk hodinky pro soutěž Flutter Clock](http://img.youtube.com/vi/DQluq00k9hs/maxresdefault.jpg)](http://www.youtube.com/watch?v=DQluq00k9hs)
 
-[Vimeo]( ) or [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
 
 ---
 
@@ -23,4 +23,6 @@ Obsahují tmavé a světlé téma, **kukačku** a taky zobrazují počasí a tep
 
 > V každé z těchto dvou složek jsou další video materiály o přípravě animací nebo o spuštění aplikace na reálných zařízeních.
 
-* Kód pomocného baličku Flutter Clock Helper se nachází v *nedotčené* složce [flutter_clock_helper](./flutter_clock_helper) tohoto repositáře GitHub.
+* Kód pomocného baličku Flutter Clock Helper se nachází v *nedotčené** složce [flutter_clock_helper](./flutter_clock_helper) tohoto repositáře GitHub.
+
+[* *pouze jsem přesunul soubor LICENCE Googlu, protože je to jejich kód*](./flutter_clock_helper/LICENSE)

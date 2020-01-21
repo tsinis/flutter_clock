@@ -13,7 +13,7 @@ It has a light theme and a dark theme, **cuckoo bird** and displays sample weath
 
 [![Steampunk Flutter Clock](http://img.youtube.com/vi/DQluq00k9hs/maxresdefault.jpg)](http://www.youtube.com/watch?v=DQluq00k9hs)
 
-[Vimeo]( ) or [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
 
 ---
 
@@ -22,4 +22,6 @@ It has a light theme and a dark theme, **cuckoo bird** and displays sample weath
 
 > In each of these two folders, there are additional videos of the animations preparation or the actual app launch on real devices.
 
-* For Flutter Clock Helper code, see inside *untouched* [flutter_clock_helper](./flutter_clock_helper) folder, in this GitHub repo.
+* For Flutter Clock Helper code, see inside *untouched** [flutter_clock_helper](./flutter_clock_helper) folder, in this GitHub repo.
+
+[* *only moved Google's LICENSE file there, since that is their code.*](./flutter_clock_helper/LICENSE)

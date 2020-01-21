@@ -5,19 +5,38 @@
 ## Table of content:
 * [Description](#Description)
 * [Licenses](#Licenses)
+* [Footage of real devices](#Footage-of-real-devices)
 * [Changes](#Changes)
 * [Know Issues](#Know-Issues)
   * [Building APK files](#Building-APK-Files)
   * [Poor performance on some devices](#Poor-Performance)
 * [Technical Data](#Technical-Data)
 
-----
+![Screenshot](screenshot.jpg)
 
 ## Description
 Here you will find a code base of this Steampunk Flutter Clock project and it’s guided by the contest rules, you can read more about this rules here: [flutter.dev/clock](https://flutter.dev/clock).
 
 ## Licenses
 Code is licensed under an appropriate open source license (BSD aka University of California license), assets in [assets](./assets) folder are licensed with CC BY 4.0 license and font in [third_party](./third_party) folder, contain OFL license. You can find file named LICENSE inside folders, that contains a copy of the license, with full text of that license.
+
+## Footage of real devices
+
+Here you can find a raw, untouched 4K footage from real devices, running iOS (iPhone, from year 2016) and Android (2-in-1 tablet, from year 2013) operating systems, with those steampunk clocks on it.
+
+Checksums:
+
+MD5: ```85112361007BD86664C871030E1D3D55```
+
+SHA-1: ```0CFCDFE7EA241C304CA694CC376983F11B1C6E6D```
+
+![Video Preview](https://drive.google.com/thumbnail?authuser=0&sz=w3840&id=1MEvmXMpxN4UaGxbnPOzpHPvQ4rkUYXqv)
+
+[Dropbox](https://www.dropbox.com/sh/artyk72v9tckws3/AAAc5q7e0c70HiCDLuuiNN9Ia?dl=0) |
+[Google Drive](https://drive.google.com/open?id=1XkKovGk6c6a0NpMadtCMXMx6KAM61RPp) | [Mega.nz](https://mega.nz/#F!5UlUzKBT!NZLFHkueFZT_SJWvZf1yAQ) |
+[OneDrive](https://1drv.ms/u/s!Aoc8-1_hYIfGiFPEwgpoCKerXyNC?e=TLMM3v) |
+[Amazon Drive](https://www.amazon.com/clouddrive/share/gtEpUwtoJYL0UvYkvPirVcsCnrloKuaGbtxKqbrCWlr) |
+[iCloud](https://www.icloud.com/iclouddrive/0BYofNXgp-nZoBJBiTW_gIJlg#20200121%5F143234)
 
 ## Changes
 
@@ -64,7 +83,7 @@ with:
       ref: stable
       path: flare_flutter
 ````
-> **Note:** this is clearly device-dependent issue, because I've had successfully launched, even Debug version of app, on android_x86_64 device (tablet, from year 2013), without any lags or huge frame drops.
+> **Note:** this is clearly device-dependent issue, because I've had successfully launched, on device with Android OS running, without horrible lags or huge frame drops. As you can see at [Footage of real devices](#Footage-of-real-devices).
 
  I had **no problems on physical iOS devices (iPhones)**, anyway please report issues or advice how to fix them, on Issues section.
 
