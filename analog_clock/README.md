@@ -71,7 +71,7 @@ classpath 'com.android.tools.build:gradle:3.4.2'
 ```
 Problem should be gone now.
 #### Poor Performance
-Animations are made to run in up to **25 FPS**, but some Android devices, sadly, cannot run animation smoothly at this moment (January 2020). There is few open [Issues](https://github.com/2d-inc/Flare-Flutter/issues) in flare_flutter repository related to this. Rive team is working on it, we may also receive Android runtime in this year (at least this is planned to do in their [Roadmap](https://portal.productboard.com/rive/1-roadmap/c/56-android-runtime)), so according to date you reading this, problem may, or may not occur. If FPS not satisfies you, please try [my fork of flare_flutter](https://github.com/tsinis/flare-flutter) 2.0.1, with anti-aliasing turned off instead of official flare_flutter package — inside of [pubspec.yaml](./pubspec.yaml) file (in this root folder), replace line:
+Animations are made to run in up to **25 FPS**, but some Android devices, sadly, cannot run animation smoothly at this moment (January 2020). There is few open [Issues](https://github.com/2d-inc/Flare-Flutter/issues) in flare_flutter repository related to this. Rive team is working on it with Skia team, so according to date you reading this, problem may, or may not occur. If FPS not satisfies you, please try [my fork of flare_flutter](https://github.com/tsinis/flare-flutter) 2.0.1, with anti-aliasing turned off instead of official flare_flutter package — inside of [pubspec.yaml](./pubspec.yaml) file (in this root folder), replace line:
 ```markdown
   flare_flutter: ^2.0.1
 ```
