@@ -11,9 +11,8 @@
 
 В приложении есть светлая и тёмная тема, **кукушка** а так же они показывают температуру и погоду, переданные через вспомогательный пакет Flutter Clock Helper. **Видео, показывающие главные особенности этих часов вы можете посмотреть по этой ссылке:**
 
-[![Стимпанк часы для конкурса Flutter Clock](http://img.youtube.com/vi/DQluq00k9hs/maxresdefault.jpg)](http://www.youtube.com/watch?v=DQluq00k9hs)
-
-[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[![Стимпанк часы для конкурса Flutter Clock](https://i.vimeocdn.com/video/850219016_1280x720.jpg)](https://vimeo.com/tsinis/futterclock)
+[Vimeo](https://vimeo.com/tsinis/futterclock) или [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
 
 ---
 

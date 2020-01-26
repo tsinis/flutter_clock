@@ -11,9 +11,8 @@ I've made a analog clock variant, with look and feel of, late 18 or early 19 cen
 
 It has a light theme and a dark theme, **cuckoo bird** and displays sample weather and temperature data, provided from Flutter Clock Helper package. You can watch a **preview video of it (with main functionality highlight) here:**
 
-[![Steampunk Flutter Clock](http://img.youtube.com/vi/DQluq00k9hs/maxresdefault.jpg)](http://www.youtube.com/watch?v=DQluq00k9hs)
-
-[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[![Steampunk Flutter Clock](https://i.vimeocdn.com/video/850219016_1280x720.jpg)](https://vimeo.com/tsinis/futterclock)
+[Vimeo](https://vimeo.com/tsinis/futterclock) or [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
 
 ---
 
