@@ -10,7 +10,7 @@ Vytvořil jsem variantu analogových hodinek, v duchu Viktoriánské éry (konec
 
 > **Poznámka:** design je sám o sobě nezávislý na velikosti displeje, tj. aplikaci lze spustit na jakkoli velkém displeji bez ztráty kvality (všechna grafika je připravena ve křivkách), avšak vytvářel jsem ho pro menší displeje, o velikosti cca 4-6’ (tak je velký displej chytrých hodinek Lenovo).
 
-Obsahují tmavé a světlé téma, **kukačku** a taky zobrazují počasí a teplotu, získané přes pomocný balíček Flutter Clock Helper. **Ukázku všech hlavních funkci a animaci naleznete v tomto videu:**
+Obsahují tmavé a světlé téma, **kukačku, čtyři "easter egg"** a taky zobrazují počasí a teplotu, získané přes pomocný balíček Flutter Clock Helper. **Ukázku všech hlavních funkci a animaci naleznete v tomto videu:**
 
 [![Steampunk hodinky pro soutěž Flutter Clock](https://i.vimeocdn.com/video/850219016_1280x720.jpg)](https://vimeo.com/tsinis/futterclock)
 [Vimeo](https://vimeo.com/tsinis/futterclock) nebo [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
