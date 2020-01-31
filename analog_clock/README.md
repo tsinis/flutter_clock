@@ -7,6 +7,7 @@
 * [Licenses](#Licenses)
 * [Footage of real devices](#Footage-of-real-devices)
 * [Changes](#Changes)
+* [Releases](#Releases)
 * [Know Issues](#Know-Issues)
   * [Building APK files](#Building-APK-Files)
   * [Poor performance on some devices](#Poor-Performance)
@@ -56,6 +57,10 @@ Main changes in original Google's example code:
 * added [third_party](./third_party) folder, with font and it's license.
 
 **Newly added/replaced code is commented**, so you can understand what's going on.
+
+## Releases
+
+You can find binaries in [Releases](https://github.com/tsinis/flutter_clock/releases) section of this GitHub repository. I will add them gradually.
 
 ## Know Issues
 

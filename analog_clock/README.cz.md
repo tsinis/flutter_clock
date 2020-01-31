@@ -7,6 +7,7 @@
 * [Licence](#Licence)
 * [Záběry ze skutečných zařízení](#Záběry-ze-skutečných-zařízení)
 * [Změny](#Změny)
+* [Vydání](#Vydání)
 * [Známé problémy](#Známé-problémy)
   * [Generovaní APK souborů](#Generovaní-APK-souborů)
   * [Chabý výkon některých zařízeních](#Chabý-výkon)
@@ -55,6 +56,11 @@ Hlavní změny oproti původnímu kódu, z příkladu analogových hodinek, posk
 * přidána složka [third_party](./third_party), obsahující písmo a licenci k němu.
 
 **Veškerý nový/úpravný kód obsahuje komentáře**, popisující co se děje.
+
+## Vydání
+
+Binární spouštěcí soubory najdete v části [Releases](https://github.com/tsinis/flutter_clock/releases) tohoto repozitáře GitHub. Přidávám je postupně.
+
 ## Známé problémy
 Na platformě Android se mohou vyskytovat tyto problémy:
 #### Generovaní APK souborů
