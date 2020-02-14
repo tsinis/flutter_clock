@@ -8,7 +8,7 @@ All those vector assets were exclusively made and optimized, for being used in [
 
 Assets are made in free to use online editor called [Gravit Designer](https://www.designer.io/) (you don't need "Pro" features for it), then exported to SVG without background. After that, SVG files were optimized (to reduce the file size) and imported into the Rive. *Due to technical reasons, I did not used all assets, in final animation file.*
 
-Also you can read something more about it, in my blog (*link will be provided later*), but at this moment “How it’s made” video of animation preparing can be found here:
+Also you can see something more about animation preparing, in “How it’s made” video — it can be found here:
 
 [![How it’s made — Steampunk Clock](https://i.vimeocdn.com/video/848054930_1280x720.jpg)](https://vimeo.com/tsinis/futterclockanimations)
 [Vimeo](https://vimeo.com/tsinis/futterclockanimations) or [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)

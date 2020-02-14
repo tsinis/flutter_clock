@@ -7,7 +7,7 @@ Veškerá grafika, kterou zde naleznete, byla ručně vytvořena speciálně pro
 
 Podklady jsou připravené v bezplatném online redaktoru vektorové grafiky, který se jmenuje [Gravit Designer](https://www.designer.io/) (v tomto případe možnosti “Pro” verze nejsou zapotřebí). Posléze exportované do SVG formátu bez podkladů a nakonec optimalizované (s redukci rozměrů souborů) a importované do Rive. *Z technických důvodů všechny podklady, ve finální animaci, použitý nebyli.*
 
-Pokud máte zájem o to, jak byli animace připravovaný, naleznete za nedlouho článek v mém blogu, nebo můžete se podívat na video tady:
+Pokud máte zájem o to, jak byli animace připravovaný — můžete se podívat na video tady:
 
 [![Jak byli animace připravovaný — Steampunk hodinky](https://i.vimeocdn.com/video/848054930_1280x720.jpg)](https://vimeo.com/tsinis/futterclockanimations)
 [Vimeo](https://vimeo.com/tsinis/futterclockanimations) nebo [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
