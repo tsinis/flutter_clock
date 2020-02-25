@@ -11,7 +11,7 @@ Assets are made in free to use online editor called [Gravit Designer](https://ww
 Also you can see something more about animation preparing, in “How it’s made” video — it can be found here:
 
 [![How it’s made — Steampunk Clock](https://i.vimeocdn.com/video/848054930_1280x720.jpg)](https://vimeo.com/tsinis/futterclockanimations)
-[Vimeo](https://vimeo.com/tsinis/futterclockanimations) or [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
+[Vimeo](https://vimeo.com/tsinis/flutterclockanimations) or [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
 
 ----
 
