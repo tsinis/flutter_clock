@@ -2,7 +2,7 @@
 
 # Steampunk hodinky pro soutěž Flutter Clock :mantelpiece_clock:
 
-Tato aplikace byla vytvořena ve frameworku Flutter, pro společnou vývojářskou/design soutěž firem Google a Lenovo, pod názvem “***Flutter Clock***”. Cílem této soutěže bylo vytvoření nejhezčího designu chytrých hodinek Lenovo, za použiti frameworku Flutter, pomocného baličku Flutter Clock Helper a bezplatných/volných nástrojů. Více o soutěži, v anglickém jazyce naleznete na oficiálních stránkách: [flutter.dev/clock](https://flutter.dev/clock)
+Tento projekt je **jedním z vítězů** ve společné vývojářské/design soutěži firem **Google a Lenovo**, pod názvem “***Flutter Clock***” (s **více než 850** platnými příspěvky z celého světa). Cílem této soutěže bylo vytvoření nejhezčího designu chytrých hodinek Lenovo, za použiti frameworku Flutter, pomocného baličku Flutter Clock Helper a bezplatných/volných nástrojů. Více o soutěži, v anglickém jazyce naleznete na oficiálních stránkách: [flutter.dev/clock](https://flutter.dev/clock)
 
 ![Vizualizace Steampunk hodinek](preview.jpg)
 
@@ -12,10 +12,8 @@ Vytvořil jsem variantu analogových hodinek, v duchu Viktoriánské éry (konec
 
 Obsahují tmavé a světlé téma, **kukačku, čtyři "easter egg"** a taky zobrazují počasí a teplotu, získané přes pomocný balíček Flutter Clock Helper. **Ukázku všech hlavních funkci a animaci naleznete v tomto videu:**
 
-[![Steampunk hodinky pro soutěž Flutter Clock](https://i.vimeocdn.com/video/850219016_1280x720.jpg)](https://vimeo.com/tsinis/futterclock)
-[Vimeo](https://vimeo.com/tsinis/futterclock) nebo [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
-
-[YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[![Steampunk hodinky pro soutěž Flutter Clock](https://i.vimeocdn.com/video/857655615_1920x1080.jpg)](https://vimeo.com/tsinis/futterclock)
+[Vimeo](https://vimeo.com/tsinis/futterclock) nebo [YouTube](https://youtu.be/1cwBYMQwRb8)
 
 ---
 

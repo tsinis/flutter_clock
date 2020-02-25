@@ -2,7 +2,7 @@
 
 # Steampunk Clock for Flutter Clock contest :mantelpiece_clock:
 
-This app is made in Flutter framework, for Google's & Lenovo dev/design contest, called "***Flutter Clock***", you can read more about this contest here: [flutter.dev/clock](https://flutter.dev/clock)
+This project is **one of the winning submissions** in **Google's & Lenovo** dev/design contest, called "***Flutter Clock***" (with **over 850** valid entries from around the world). You can read more about this contest here: [flutter.dev/clock](https://flutter.dev/clock)
 
 ![Steampunk Clock Visualisation](preview.jpg)
 
@@ -11,8 +11,7 @@ I've made a analog clock variant, with look and feel of, late 18 or early 19 cen
 
 It has a light theme and a dark theme, **cuckoo bird, four easter eggs** and displays sample weather and temperature data, provided from Flutter Clock Helper package. You can watch a **preview video of it (with main functionality highlight) here:**
 
-[![Steampunk Flutter Clock](https://i.vimeocdn.com/video/850219016_1280x720.jpg)](https://vimeo.com/tsinis/futterclock)
-[Vimeo](https://vimeo.com/tsinis/futterclock) or [YouTube](http://www.youtube.com/watch?v=DQluq00k9hs)
+[![Steampunk Flutter Clock](https://i.vimeocdn.com/video/857655615_1920x1080.jpg)](https://vimeo.com/tsinis/futterclock)[Vimeo](https://vimeo.com/tsinis/futterclock) or [YouTube](https://youtu.be/1cwBYMQwRb8)
 
 ---
 
