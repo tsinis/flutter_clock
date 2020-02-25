@@ -12,8 +12,8 @@ Vytvořil jsem variantu analogových hodinek, v duchu Viktoriánské éry (konec
 
 Obsahují tmavé a světlé téma, **kukačku, čtyři "easter egg"** a taky zobrazují počasí a teplotu, získané přes pomocný balíček Flutter Clock Helper. **Ukázku všech hlavních funkci a animaci naleznete v tomto videu:**
 
-[![Steampunk hodinky pro soutěž Flutter Clock](https://i.vimeocdn.com/video/857655615_1920x1080.jpg)](https://vimeo.com/tsinis/futterclock)
-[Vimeo](https://vimeo.com/tsinis/futterclock) nebo [YouTube](https://youtu.be/1cwBYMQwRb8)
+[![Steampunk hodinky pro soutěž Flutter Clock](https://i.vimeocdn.com/video/857655615_1920x1080.jpg)](https://vimeo.com/tsinis/flutterclock)
+[Vimeo](https://vimeo.com/tsinis/flutterclock) nebo [YouTube](https://youtu.be/1cwBYMQwRb8)
 
 ---
 
