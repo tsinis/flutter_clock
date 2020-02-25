@@ -10,7 +10,7 @@ Podklady jsou připravené v bezplatném online redaktoru vektorové grafiky, kt
 Pokud máte zájem o to, jak byli animace připravovaný — můžete se podívat na video tady:
 
 [![Jak byli animace připravovaný — Steampunk hodinky](https://i.vimeocdn.com/video/848054930_1280x720.jpg)](https://vimeo.com/tsinis/flutterclockanimations)
-[Vimeo](https://vimeo.com/tsinis/futterclockanimations) nebo [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
+[Vimeo](https://vimeo.com/tsinis/flutterclockanimations) nebo [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
 
 ----
 

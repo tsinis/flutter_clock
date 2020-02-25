@@ -10,7 +10,7 @@
 Если же Вам интересно как создавались все эти анимации — видео уже можно посмотреть тут:
 
 [![Как создавались анимации в стимпанк часах](https://i.vimeocdn.com/video/848054930_1280x720.jpg)](https://vimeo.com/tsinis/flutterclockanimations)
-[Vimeo](https://vimeo.com/tsinis/futterclockanimations) или [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
+[Vimeo](https://vimeo.com/tsinis/flutterclockanimations) или [YouTube](https://www.youtube.com/watch?v=_9d7O9PfX3s)
 
 ----
 
