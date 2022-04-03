@@ -1,62 +1,44 @@
-// Copyright 2020, Roman Cinis. All rights reserved.
+// Copyright 2022, Roman Cinis. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:io' show Platform;
-
-// import 'package:flare_flutter/asset_provider.dart';
-// import 'package:flare_flutter/provider/asset_flare.dart';
-import 'package:flutter/services.dart' show SystemChrome, DeviceOrientation;
-import 'package:flutter/foundation.dart';
+import 'package:flare_flutter/flare_cache.dart';
+import 'package:flare_flutter/flare_cache_asset.dart';
 import 'package:flutter/material.dart' show WidgetsFlutterBinding, runApp;
+import 'package:flutter/services.dart';
 import 'package:flutter_clock_helper/customizer.dart';
-import 'package:flutter_clock_helper/model.dart';
-// import 'package:flare_flutter/flare_cache.dart';
 
 import 'analog_clock.dart';
 
-// Here you may find a Rive animation caching, uncomment code if you need it.
-
-// Function to cache Rive (ex Flare) animations.
-// Future<void> _warmupAnimations() async {
-// await cachedActor(assetProvider);
-// }
-
-void main() async {
-  // Newer versions of Flutter require initializing widget-flutter
-  // binding prior to warming up the animation cache.
+/// Application entry point, default to all Dart/Flutter projects.
+Future<FlareCacheAsset> main() async {
+  /// Newer versions of Flutter require initializing widget-flutter
+  /// binding prior to warming up the animation cache.
   WidgetsFlutterBinding.ensureInitialized();
 
-  // A temporary measure until Platform supports web and TargetPlatform supports
-  // macOS.
-  if (!kIsWeb && Platform.isMacOS) {
-    // TODO(gspencergoog): Update this when TargetPlatform includes macOS.
-    // https://github.com/flutter/flutter/issues/31366
-    // See https://github.com/flutter/flutter/wiki/Desktop-shells#target-platform-override.
-    debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
-  }
+  /// Don't prune the Rive (ex Flare) cache, keep loaded animation
+  /// files warm and ready to be re-displayed.
+  FlareCache.doesPrune = false;
 
-  // Don't prune the Rive (ex Flare) cache, keep loaded animation
-  // files warm and ready to be re-displayed.
-  // FlareCache.doesPrune = false;
+  /// Warm the animation cache up so we can return it later,
+  /// for testing purposes only.
+  final cache = await cachedActor(assetProvider);
 
-  // Warm the animation cache up.
-  // _warmupAnimations().then((_) {
+  /// Run clock in full-screen mode.
+  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
 
-  // Run clock in full-screen mode.
-  SystemChrome.setEnabledSystemUIOverlays([]);
-  // Run clock in landscape mode.
-  SystemChrome.setPreferredOrientations(
-          [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft])
-      .then((_) {
-    // This creates a clock that enables you to customize it.
-    //
-    // The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
-    //  - A clock widget (in this case, [AnalogClock])
-    //  - A model (provided to you by [ClockModel])
-    // For more information, see the flutter_clock_helper package
-    runApp(ClockCustomizer((ClockModel model) => AnalogClock(model)));
-  });
-  // }
-  // );
+  /// Run clock in landscape mode.
+  await SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft],
+  );
+
+  /// This creates a clock that enables you to customize it.
+  ///
+  /// The [ClockCustomizer] takes in a [ClockBuilder] that consists of:
+  ///  - A clock widget (in this case, [AnalogClock])
+  ///  - A model (provided to you by [ClockModel])
+  /// For more information, see the flutter_clock_helper package
+  runApp(const ClockCustomizer(AnalogClock.new));
+
+  return cache;
 }
