@@ -1,6 +1,6 @@
 ﻿:globe_with_meridians:  [english](README.md)    <u>**český**</u>    [русский](README.ru.md)
 
-# Steampunk hodinky pro soutěž Flutter Clock :mantelpiece_clock
+# Steampunk hodinky pro soutěž Flutter Clock
 
 Tento projekt je **jedním z vítězů** ve společné vývojářské/design soutěži firem **Google a Lenovo**, pod názvem “***Flutter Clock***” (s **více než 850** platnými příspěvky z celého světa). Cílem této soutěže bylo vytvoření nejhezčího designu chytrých hodinek Lenovo, za použiti frameworku Flutter, pomocného baličku Flutter Clock Helper a bezplatných/volných nástrojů. Více o soutěži, v anglickém jazyce naleznete na oficiálních stránkách: [flutter.dev/clock](https://flutter.dev/clock)
 

@@ -1,6 +1,6 @@
 :globe_with_meridians:  **<u>english</u>**	[český](README.cz.md)	[русский](README.ru.md)
 
-# Steampunk Clock for Flutter Clock contest :mantelpiece_clock
+# Steampunk Clock for Flutter Clock contest
 
 This project is **one of the winning submissions** in **Google's & Lenovo** dev/design contest, called "***Flutter Clock***" (with **over 850** valid entries from around the world). You can read more about this contest here: [flutter.dev/clock](https://flutter.dev/clock)
 
