@@ -2,7 +2,7 @@
 
 # Steampunk Clock for Flutter Clock contest
 
-This project is **one of the winning submissions** in **Google's & Lenovo** dev/design contest, called "***Flutter Clock***" (with **over 850** valid entries from around the world). You can read more about this contest here: [flutter.dev/clock](https://flutter.dev/clock)
+This project is **one of the winning submissions** in **Google & Lenovo** dev/design contest, called "***Flutter Clock***" (with **over 850** valid entries from around the world). You can read more about this contest here: [flutter.dev/clock](https://flutter.dev/clock).
 
 ![Steampunk Clock Visualization](previews/preview.jpg)
 

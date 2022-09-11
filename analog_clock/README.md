@@ -15,7 +15,7 @@
 
 ## Description
 
-Here you will find a code base of this Steampunk Flutter Clock project and it’s guided by the contest rules, you can read more about this rules here: [flutter.dev/clock](https://flutter.dev/clock).
+Here you will find a code base of this Steampunk Flutter Clock project (with 100% test coverage) that was guided by the contest rules, you can read more about this rules here: [flutter.dev/clock](https://flutter.dev/clock).
 
 ## Licenses
 

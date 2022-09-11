@@ -21,6 +21,7 @@ class TimeAnimationController extends FlareController {
 
   /// Other animations are pretty simple, we can control them by some real data.
   late final ActorAnimation? _time;
+  // ignore: unused_field, because it's false positive.
   late ActorAnimation? _weather;
 
   /// Animations not mixing together here. Declaring human readable variable.
